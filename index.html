@@ -183,8 +183,8 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--green);outline-offs
 .hero-scrim{
   position:absolute;inset:0;
   background:
-    linear-gradient(100deg, rgba(0,0,40,.97) 0%, rgba(0,0,40,.94) 34%, rgba(0,0,50,.72) 54%, rgba(0,0,55,.5) 78%, rgba(0,0,55,.44) 100%),
-    linear-gradient(to top, rgba(0,0,40,.92) 0%, rgba(0,0,40,.2) 40%, rgba(0,0,40,.36) 100%);
+    linear-gradient(100deg, rgba(0,0,40,.95) 0%, rgba(0,0,40,.9) 34%, rgba(0,0,50,.58) 54%, rgba(0,0,55,.34) 78%, rgba(0,0,55,.26) 100%),
+    linear-gradient(to top, rgba(0,0,40,.86) 0%, rgba(0,0,40,.1) 42%, rgba(0,0,40,.22) 100%);
 }
 .hero-inner{
   position:relative;
@@ -417,7 +417,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--green);outline-offs
   transition:transform 1.4s var(--ease)}
 .bento .photo:hover img{transform:scale(1.045)}
 .bento .photo::after{content:"";position:absolute;inset:0;
-  background:linear-gradient(to top,rgba(0,0,40,.9) 0%,rgba(0,0,40,.25) 48%,rgba(0,0,40,0) 78%)}
+  background:linear-gradient(to top,rgba(0,0,40,.86) 0%,rgba(0,0,40,.14) 46%,rgba(0,0,40,0) 70%)}
 .bento .photo span{position:absolute;left:1.5rem;right:1.5rem;bottom:1.4rem;z-index:2;
   color:#fff;font-weight:700;font-size:1.05rem;letter-spacing:-.015em;line-height:1.2;text-transform:uppercase}
 .tlink{display:inline-flex;align-items:center;gap:.55rem;margin-top:2rem;white-space:nowrap;
@@ -455,7 +455,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--green);outline-offs
 .band-media{position:absolute;inset:-8% 0}
 .band img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
 .band .scrim{position:absolute;inset:0;
-  background:linear-gradient(90deg,rgba(0,0,46,.95) 0%,rgba(0,0,46,.82) 45%,rgba(0,0,46,.28) 100%)}
+  background:linear-gradient(90deg,rgba(0,0,46,.93) 0%,rgba(0,0,46,.74) 45%,rgba(0,0,46,.1) 100%)}
 .band .inner{position:relative;width:var(--shell);margin-inline:auto;padding-block:clamp(4.5rem,9vw,7.5rem)}
 .band h2{max-width:16ch;margin-bottom:1.3rem}
 .band p{max-width:52ch;color:rgba(255,255,255,.86)}
@@ -503,7 +503,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--green);outline-offs
 .cta-media{position:absolute;inset:0}
 .cta-media img{width:100%;height:100%;object-fit:cover;object-position:56% 52%}
 .cta-scrim{position:absolute;inset:0;background:
-  linear-gradient(96deg,rgba(0,0,64,.97) 0%,rgba(0,0,64,.94) 42%,rgba(0,0,64,.58) 64%,rgba(0,0,64,.26) 100%)}
+  linear-gradient(96deg,rgba(0,0,64,.95) 0%,rgba(0,0,64,.9) 42%,rgba(0,0,64,.44) 66%,rgba(0,0,64,.08) 100%)}
 .cta .shell{position:relative}
 
 /* ---------- footer ---------- */
@@ -642,7 +642,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--green);outline-offs
   transition:transform 1.6s var(--ease)}
 .photo-band:hover img{transform:scale(1.05)}
 /* deep blue duotone with the green halftone motif over it */
-.duo img{filter:grayscale(1) contrast(1.1) brightness(.78)}
+.duo img{filter:grayscale(.45) contrast(1.04) brightness(.96) saturate(1.05)}
 .duo::before{content:"";position:absolute;inset:0;z-index:1;mix-blend-mode:screen;
   background:linear-gradient(115deg,rgba(0,0,119,.92) 0%,rgba(101,166,186,.5) 100%)}
 .duo .shade{position:absolute;inset:0;z-index:2;
@@ -687,7 +687,7 @@ body{hyphens:none}
 .bento li.green:hover{background:var(--green-lift)}
 .bento li.green:hover svg{stroke:#101010}
 .bento li.green::after{background:var(--navy)}
-.bento .photo img{filter:saturate(.94)}
+.bento .photo img{filter:saturate(1.04) brightness(1.04)}
 .bento .photo:hover img{filter:none}
 .bento .photo>span:not(.lane):not(.shade)::before{content:"";display:block;width:34px;height:3px;background:var(--green);
   margin-bottom:.7rem;transform:scaleX(0);transform-origin:left}
@@ -798,9 +798,9 @@ body{hyphens:none}
   .bento .photo{grid-column:span 2;grid-row:span 1;min-height:230px}
   .bento .photo-band{grid-column:span 2}
   .foot-top{grid-template-columns:1fr 1fr}
-  .hero-scrim{background:linear-gradient(to top,rgba(0,0,40,.97) 0%,rgba(0,0,40,.94) 46%,rgba(0,0,40,.7) 72%,rgba(0,0,40,.48) 100%)}
+  .hero-scrim{background:linear-gradient(to top,rgba(0,0,40,.95) 0%,rgba(0,0,40,.9) 48%,rgba(0,0,40,.58) 74%,rgba(0,0,40,.3) 100%)}
   .hero-media img{object-position:56% 18%}
-  .band .scrim{background:linear-gradient(to top,rgba(0,0,46,.96) 0%,rgba(0,0,46,.88) 52%,rgba(0,0,46,.5) 100%)}
+  .band .scrim{background:linear-gradient(to top,rgba(0,0,46,.94) 0%,rgba(0,0,46,.82) 54%,rgba(0,0,46,.3) 100%)}
 }
 @media (max-width:860px){
   .mcta{display:block}
@@ -812,7 +812,7 @@ body{hyphens:none}
   .stmt .ln{white-space:nowrap}
   .stmt .ln:nth-child(2){text-align:left;padding-left:.42em}
   .stmt-foot{flex-direction:column;align-items:flex-start;gap:1.1rem}
-  .cta-scrim{background:linear-gradient(to top,rgba(0,0,64,.97) 0%,rgba(0,0,64,.94) 55%,rgba(0,0,64,.68) 100%)}
+  .cta-scrim{background:linear-gradient(to top,rgba(0,0,64,.95) 0%,rgba(0,0,64,.9) 57%,rgba(0,0,64,.45) 100%)}
   .hero-foot{grid-template-columns:1fr 1fr}
   .hero-foot span:nth-child(4){border-left:0;padding-left:0}
   .hero-scroll{display:none}
@@ -866,6 +866,19 @@ body{hyphens:none}
   .pix{opacity:.85!important}
   .head-where{opacity:1!important}
 }
+
+/* photography reads bright; legibility is protected locally, behind the text only,
+   with a soft radial so there is no visible panel edge */
+.hero .lede,.band p{position:relative;isolation:isolate}
+.hero .lede::before,.band p::before{content:"";position:absolute;
+  inset:-3.2rem -4.2rem;z-index:-1;pointer-events:none;
+  background:radial-gradient(ellipse closest-side at 50% 50%,
+    rgba(0,0,40,.88) 0%, rgba(0,0,40,.78) 38%, rgba(0,0,40,.46) 66%,
+    rgba(0,0,40,.16) 85%, rgba(0,0,40,0) 100%)}
+.band p::before{background:radial-gradient(ellipse closest-side at 50% 50%,
+    rgba(0,0,46,.9) 0%, rgba(0,0,46,.8) 38%, rgba(0,0,46,.48) 66%,
+    rgba(0,0,46,.18) 85%, rgba(0,0,46,0) 100%)}
+.hero .lede,.band p{color:rgba(255,255,255,.95)}
 </style>
 <noscript><style>
 .rise,.ln>i,.hero .seq,.slot,.slot.hps,.hero-media,.hero-foot,.band-media,.hero .rule,.lanes span,
